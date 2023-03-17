@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;500&display=swap");
+html body {
+  background-color: black;
+  color: white;
+}
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+.table-container {
+  width: fit-content;
+  height: 60vh;
+  /* background-color: rgb(247, 247, 247); */
+  border-radius: 10px;
+}
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: large;
+  font-weight: bold;
+}
+.table-wrapper {
+  height: 40vh;
+  overflow: auto;
+  min-width: 50vw;
+  margin: 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #97b8e9;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+#customers {
+  border-collapse: collapse;
+  width: 100%;
+  color: black;
+  font-weight: 600;
+  height: 100%;
+}
+
+#customers td,
+#customers th {
+  border: 0px solid #ddd;
+  padding: 8px;
+  /* background-color: rgb(247, 247, 247); */
+}
+
+#customers tr:nth-child(even) {
+  background-color:  #ffffff;
+}
+#customers tr:nth-child(odd) {
+  background-color: #97b8e9;
+}
+
+#customers tr:hover {
+  background-color: #ffe603;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #041daa;
+  color: white;
+}
+#customers th:nth-child(1) {
+  border-top-left-radius: 10px;
+}
+#customers th:nth-child(5) {
+  border-top-right-radius: 10px;
+}
+.button-container {
+  width: 100%;
+  height: 10vh;
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.button-container button {
+  background-color: #ffffff;
+  color: black;
+  padding: 4px 10px;
+  border-radius: 5px;
+}
+
+.loader {
+  width: 24px;
+  height: 24px;
+  border: 3px solid #040b4b;
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(270deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.custom-height{
+    height: 300px;
+}
